@@ -21,7 +21,11 @@
 		$info = json_decode($donnees);
 	?>
 
-	<p>Il fait actuellement <?php echo($info -> temperature)?>°C et le taux d'humidité est de <?php echo($info -> humidite)?>%.</p>
+	<p>Il fait actuellement <?php echo($info -> temperature);?>°C et le taux d'humidité est de <?php echo($info -> humidite);?>%.</p>
+
+	<div id="thermometer">
+  		<div id="bargraph"></div>
+	</div>
 
 
 

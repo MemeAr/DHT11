@@ -9,24 +9,18 @@
 	<h1>Température</h1>
 
 	<?php
-		// function lecture($fichier) {
-		// 	$monFichier = file_get_contents('data.txt');
-		// 	var_dump(json_decode($monFichier));
-		// }
-
-		// $fichier = '/var/www/html/DHT11/data.txt';
-		// lecture($fichier);
-
 		$donnees = file_get_contents('data.txt');
 		$info = json_decode($donnees);
+
+		$bargraph_height = 161 + $info->temperature * 4;
+		$bargraph_top = 315 - $info->temperature * 4;
 	?>
 
 	<p>Il fait actuellement <?php echo($info -> temperature);?>°C et le taux d'humidité est de <?php echo($info -> humidite);?>%.</p>
 
 	<div id="thermometer">
-  		<div id="bargraph"></div>
+  		<div id="bargraph" style=<?php echo "\"height:".$bargraph_height."px; top:".$bargraph_top."px;\"";?>></div>
 	</div>
-
 
 
 </body>

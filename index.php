@@ -10,7 +10,7 @@
 	<h1>Température</h1>
 
 	<?php
-		$donnees = file_get_contents('data.txt');
+		$donnees = file_get_contents('data.json');
 		$info = json_decode($donnees);
 
 		$bargraph_height = 161 + $info->temperature * 4;

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="refresh" content="1">
 	<meta charset="utf-8">
 	<title>Temperature</title>
 	<link rel="stylesheet" type="text/css" href="main.css">

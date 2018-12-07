@@ -2,11 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Simulation dy NodeCMU</title>
 </head>
 <body>
-	<form>
-		<input type="text" name="temperature">
+	<h1>Simulation du NodeMCU</h1>
+	<p>Ce formulaire permet de tester l'envoi d'une température vers le serveur comme le ferait le NodeMCU.</p>
+
+	<form method="post" action="store_temp.php">
+		<label>Température :</label>
+		<input type="text" name="temperature" placeholder="Valeur numérique">
+		<input type="submit" value="Envoyer">
 	</form>
 
 </body>

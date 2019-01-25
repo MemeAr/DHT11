@@ -1,6 +1,4 @@
 <?php
-class NodeMcu {
-    public function dataNodeMcu(){
         $data_json = file_get_contents("php://input");
         $filename_temperature = 'data.json';
         
@@ -19,5 +17,3 @@ class NodeMcu {
         if (! $op) {
             http_response_code(500);
         }
-    }
-}

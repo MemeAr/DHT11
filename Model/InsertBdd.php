@@ -1,6 +1,6 @@
 <?php
 
-class InsertBdd {
+class ReleveDb {
     public function CreateBdd() {
         $req = $bdd->prepare('INSERT INTO data(temp, humidity)'.' VALUES(:temp, :humidity)');
         

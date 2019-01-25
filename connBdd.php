@@ -10,4 +10,4 @@ catch(PDOException $pe){
   die('<p>Could not connect to the database $dbname : '.$pe->getMessage().'</p>');
 }
 
-$requete = $bdd->prepare('INSERT INTO data(temp, humidity, date) VALUES (');
+$requete = $bdd->prepare('INSERT INTO data(temp, humidity, date) VALUES ('')');

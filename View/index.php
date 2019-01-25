@@ -4,7 +4,7 @@
 	<meta http-equiv="refresh" content="1">
 	<meta charset="utf-8">
 	<title>Temperature</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="../main.css">
 </head>
 <body>
 	<h1>Température</h1>
@@ -21,7 +21,6 @@
 	<div id="thermometer">
   		<div id="bargraph" style=<?php echo "\"height:".$bargraph_height."px; top:".$bargraph_top."px;\"";?>></div>
 	</div>
-
 
 </body>
 </html>
